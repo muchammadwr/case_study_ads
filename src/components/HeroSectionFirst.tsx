@@ -1,18 +1,23 @@
 import React from "react";
-import Wrapper from "./Layouts/Wrapper";
+import Wrapper from "./Wrapper";
 import hero_image_first from "/public/images/hero_image_first.png";
 import Image from "next/image";
 import { lexend } from "./Fonts/Fonts";
+import arrow from "public/icons/arrow.svg";
 
 const HeroSectionFirst = () => {
   return (
-    <section className="bg-[#ECF2FA]">
-      <Wrapper>
+    <section className="bg-[#ECF2FA] py-24 md:py-[240px]">
+      <Wrapper className="gap-[112px] md:mx-auto md:flex md:max-w-5xl md:flex-row-reverse md:items-center md:justify-center">
         <div>
-          <Image src={hero_image_first} alt="hero_image" />
+          <Image
+            src={hero_image_first}
+            alt="hero_image"
+            className="md:w-[558px]"
+          />
         </div>
-        <div className="flex flex-col gap-[30px]">
-          <h1 className={`${lexend.className} text-[34px] font-bold`}>
+        <div className="flex flex-col gap-[30px] md:w-[367px]">
+          <h1 className={`${lexend.className} text-[24px] font-bold`}>
             Elevate Your Messaging Efficiency with Our Innovative Admin Tools
           </h1>
           <p className="text-sm font-medium">
@@ -31,18 +36,7 @@ const HeroSectionFirst = () => {
               Daftar Sekarang
             </a>
             <div className="flex flex-row items-center gap-3 rounded-r-xl bg-black px-4 py-3 text-[#FAFBFF]">
-              <svg
-                width="11"
-                height="11"
-                viewBox="0 0 11 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.70437 10.1219L4.80948 9.23699L7.91673 6.12975H0.111328V4.83714H7.91673L4.80948 1.73486L5.70437 0.844948L10.3429 5.48344L5.70437 10.1219Z"
-                  fill="#FAFBFF"
-                />
-              </svg>
+              <Image src={arrow} alt="arrow" />
             </div>
           </div>
         </div>

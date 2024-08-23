@@ -1,22 +1,23 @@
 import React from "react";
-import Wrapper from "./Layouts/Wrapper";
+import Wrapper from "./Wrapper";
 import Image from "next/image";
 import hero_image_second from "public/images/hero_image_second.png";
 import { lexend } from "./Fonts/Fonts";
 
 const HeroSectionSecond = () => {
   return (
-    <section className="bg-[#ECF2FA]">
-      <Wrapper>
+    <section className="bg-[#ECF2FA] py-[107px] md:py-[240px]">
+      <Wrapper className="gap-[112px] md:mx-auto md:flex md:max-w-5xl md:flex-row md:items-center md:justify-center">
         <div>
           <Image
             src={hero_image_second}
             alt="hero_image"
             width={305}
             height={147}
+            className="md:w-[468px]"
           />
         </div>
-        <div className="flex flex-col gap-[30px]">
+        <div className="flex flex-col gap-[30px] md:w-[370px]">
           <h1 className={`${lexend.className} text-[34px] font-bold`}>
             Reach Further with Ease
           </h1>
