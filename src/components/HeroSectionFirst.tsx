@@ -7,7 +7,7 @@ import arrow from "public/icons/arrow.svg";
 
 const HeroSectionFirst = () => {
   return (
-    <section className="bg-[#ECF2FA] py-24 md:py-[240px]">
+    <section className="bg-[#ECF2FA] py-28 md:py-52">
       <Wrapper className="gap-[112px] md:mx-auto md:flex md:max-w-5xl md:flex-row-reverse md:items-center md:justify-center">
         <div>
           <Image

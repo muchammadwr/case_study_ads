@@ -7,16 +7,16 @@ import plus from "public/icons/plus.svg";
 
 const QuestionSection = () => {
   return (
-    <section className="bg-[#3366FF] py-[107px] md:py-[240px]">
-      <Wrapper className="flex-col gap-16 md:mx-auto md:flex md:max-w-5xl md:flex-col md:items-center md:justify-center">
+    <section className="bg-[#3366FF] py-20 md:py-44">
+      <Wrapper className="flex flex-col items-center justify-center gap-10 md:mx-auto md:flex md:max-w-5xl md:flex-col md:items-center md:justify-center">
         <h1
-          className={`${lexend.className} text-[24px] font-bold text-[#FFFFFF]`}
+          className={`${lexend.className} text-center text-[24px] font-bold text-[#FFFFFF]`}
         >
           Frequently Asked Questions
         </h1>
-        <div className="flex w-[558px] flex-col items-center justify-center gap-9">
-          <div className="flex flex-row gap-3">
-            <input type="text" className="h-9 w-[521px] rounded" />
+        <div className="flex max-w-[558px] flex-col items-center justify-center gap-9">
+          <div className="flex w-full flex-row justify-between gap-3">
+            <input type="text" className="h-9 w-full rounded md:w-full" />
             <Image src={search} alt="search" />
           </div>
           <div className="flex flex-col gap-[10px]">

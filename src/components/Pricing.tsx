@@ -48,19 +48,19 @@ const Pricing = () => {
           >
             Our Pricing
           </h1>
-          <div className="mt-5 hidden items-center justify-center md:visible md:flex md:flex-col">
-            <ul className="flex flex-row gap-3">
+          <div className="mt-5 items-center justify-center md:flex md:flex-col">
+            <ul className="flex flex-row items-center justify-center gap-3">
               <li className="px-[25px] py-[10px]">Monthly</li>
               <li className="rounded-full bg-[#3366FF] px-[25px] py-[10px] text-white">
                 Yearly
               </li>
             </ul>
-            <p className="my-5 rounded-2xl bg-[#E6E8F0] p-[8px] text-[#3366FF]">
+            <p className="my-5 hidden rounded-2xl bg-[#E6E8F0] p-[8px] text-[#3366FF] md:visible">
               Hemat hingga 25% dengan paket tahunan
             </p>
           </div>
         </div>
-        <div className="flex flex-row">
+        <div className="flex w-full flex-col flex-wrap items-center justify-center md:flex-row">
           {listCard.map((item, index) => (
             <Card key={index} {...item} />
           ))}

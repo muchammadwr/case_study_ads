@@ -50,7 +50,7 @@ const listCard = [
 const Card = (props: CardProps) => {
   const { title, detail, priceDiskon, priceOri, cta } = props;
   return (
-    <div className="flex w-60 flex-col gap-1 p-4">
+    <div className="flex w-60 flex-col gap-4 p-4">
       <div className="flex flex-col gap-1">
         <h1 className={`${lexend.className} text-[20px] font-bold`}>{title}</h1>
         <p className="text-[10px] font-medium">{detail}</p>

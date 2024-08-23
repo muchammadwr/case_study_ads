@@ -6,9 +6,9 @@ import { lexend } from "./Fonts/Fonts";
 
 const HeroSectionForth = () => {
   return (
-    <section className="bg-[#ECF2FA] py-[107px] md:py-[240px]">
-      <Wrapper className="md:mx-auto md:flex md:max-w-5xl md:flex-row md:items-center md:justify-center">
-        <div>
+    <section className="bg-[#ECF2FA] py-28 md:py-44">
+      <Wrapper className="md:mx-auto md:flex md:max-w-5xl md:flex-row md:items-center md:justify-center md:gap-24">
+        <div className="flex items-center justify-center">
           <Image
             src={hero_image_fourth}
             alt="hero_image_fourth"

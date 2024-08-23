@@ -7,11 +7,11 @@ import logoFooter from "public/icons/logoFooter.svg";
 const Footer = () => {
   return (
     <footer className="bg-[#3366FF] py-[107px] md:py-[240px]">
-      <Wrapper className="gap-[109px] md:mx-auto md:flex md:max-w-5xl md:flex-col md:items-center md:justify-center">
-        <div className="md:flex-row">
+      <Wrapper className="flex flex-col md:mx-auto md:flex md:max-w-5xl md:flex-col md:items-center md:justify-center">
+        <div className="flex flex-col gap-12 md:flex-row">
           <div className="flex flex-col gap-12">
             <Image src={logoPutih} alt="logo" />
-            <p className="text-xs font-medium text-white">
+            <p className="text-xs font-medium text-white md:w-64">
               Fowardin is your ultimate communication management solution. We
               empower businesses of all sizes with efficient message forwarding,
               streamlined contact management, and powerful campaign scheduling.
@@ -20,7 +20,7 @@ const Footer = () => {
               us in transforming your communication game today!
             </p>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 md:w-64">
             <h1 className="text-base font-bold text-white">Contact Us</h1>
             <p className="text-xs text-white">
               Join our mailing list to receive updates, exclusive content, and
@@ -33,14 +33,14 @@ const Footer = () => {
               Phone: +1 (123) 456-7890
             </p>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 md:w-40">
             <h1 className="text-base font-bold text-white">Lets Talk</h1>
             <p className="text-xs text-white">
               Facebook <br /> Instagram <br /> Twitter
             </p>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-center gap-3">
+        <div className="mt-52 flex flex-row items-center justify-center gap-3">
           <p className="text-sm font-light text-white">Porwered By</p>
           <Image src={logoFooter} alt="logo footer" />
         </div>

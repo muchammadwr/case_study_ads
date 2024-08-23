@@ -6,7 +6,7 @@ import hero_image_fifth from "public/images/hero_image_fifth.png";
 
 const HeroSectionFifth = () => {
   return (
-    <section className="py-[107px] md:py-[240px]">
+    <section className="py-28 md:py-44">
       <Wrapper className="gap-14 md:mx-auto md:flex md:max-w-5xl md:flex-col md:items-center md:justify-center">
         <div>
           <h1
@@ -16,8 +16,8 @@ const HeroSectionFifth = () => {
             Communication!&quot;
           </h1>
         </div>
-        <div className="flex flex-row">
-          <div>
+        <div className="flex flex-col md:flex-row">
+          <div className="flex items-center justify-center">
             <Image
               src={hero_image_fifth}
               alt="hero_image_fifth"
